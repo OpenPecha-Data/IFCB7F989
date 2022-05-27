@@ -1,0 +1,127 @@
+id: IFCB7F989
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T15:37:03.918086'
+last_modified: '2022-05-27T15:37:03.918099'
+parser: null
+source_metadata:
+  title: Saddharmapuṇḍarīka
+  language: bo
+  base:
+    fC31C:
+      title: 1. Nidāna
+      base_file: fC31C.txt
+      order: 1
+    f0534:
+      title: 2. Upāyakauśalya
+      base_file: f0534.txt
+      order: 2
+    f7F72:
+      title: 3. Aupamya
+      base_file: f7F72.txt
+      order: 3
+    fDD8A:
+      title: 4. Adhimukti
+      base_file: fDD8A.txt
+      order: 4
+    fDA90:
+      title: 5. Oṣadhī
+      base_file: fDA90.txt
+      order: 5
+    fB79B:
+      title: 6. Vyākaraṇa
+      base_file: fB79B.txt
+      order: 6
+    f29B9:
+      title: 7. Pūrvayoga
+      base_file: f29B9.txt
+      order: 7
+    f39B2:
+      title: 8. Pañcabhikṣuśatavyākaraṇa
+      base_file: f39B2.txt
+      order: 8
+    fE484:
+      title: 9. Ānandādivyākaraṇa
+      base_file: fE484.txt
+      order: 9
+    f352F:
+      title: 10. Dharmabhāṇaka
+      base_file: f352F.txt
+      order: 10
+    fCCEE:
+      title: 11. Stūpasaṃdarśana
+      base_file: fCCEE.txt
+      order: 11
+    f5941:
+      title: 12. Utsāha
+      base_file: f5941.txt
+      order: 12
+    fC875:
+      title: 13. Sukhavihāra
+      base_file: fC875.txt
+      order: 13
+    f6CC8:
+      title: 14. Bodhisattvapṛthivīvirasamudgama
+      base_file: f6CC8.txt
+      order: 14
+    f7F7E:
+      title: 15. Tathāgatāyuṣpramāṇa
+      base_file: f7F7E.txt
+      order: 15
+    fC7EA:
+      title: 16. Puṇyaparyāya
+      base_file: fC7EA.txt
+      order: 16
+    f574C:
+      title: 17. Anumodanāpuṇyanirdeśa
+      base_file: f574C.txt
+      order: 17
+    fBF13:
+      title: 18. Dharmabhāṇakānuśaṃsā
+      base_file: fBF13.txt
+      order: 18
+    fBCC3:
+      title: 19. Sadāparibhūta
+      base_file: fBCC3.txt
+      order: 19
+    f185F:
+      title: 20. Tathāgataddharyabhisaṃskāra
+      base_file: f185F.txt
+      order: 20
+    fDE86:
+      title: 21. Dhāraṇī
+      base_file: fDE86.txt
+      order: 21
+    f87C7:
+      title: 22. Bhaiṣajyarājapūrvayoga
+      base_file: f87C7.txt
+      order: 22
+    fEF4F:
+      title: 23. Gadgadasvara
+      base_file: fEF4F.txt
+      order: 23
+    f3A74:
+      title: 24. Samantamukha
+      base_file: f3A74.txt
+      order: 24
+    fC390:
+      title: 25. Śubhavyūharājapūrvayoga
+      base_file: fC390.txt
+      order: 25
+    f0C1F:
+      title: 26. Samantabhadrotsāhana
+      base_file: f0C1F.txt
+      order: 26
+    fB22F:
+      title: 27. Anuparīndanā
+      base_file: fB22F.txt
+      order: 27
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

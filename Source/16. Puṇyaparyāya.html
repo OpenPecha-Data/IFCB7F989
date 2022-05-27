@@ -1,0 +1,1006 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=483' accesskey='1'>Saddharmapuṇḍarīka</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Saddharmapuṇḍarīka<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_483[6102]" value="6102" id="lancheckbox" checked >Sanskrit: Vaidya (1960)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_483[3249]" value="3249" id="lancheckbox" checked >Chinese: T.263, Dharmarakṣa 竺法護, 286 A.D., p.</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_483[3248]" value="3248" id="lancheckbox" checked >Chinese: T.262, Kumārajīva 鳩摩羅什, 405 A.D., p., </label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_483[3246]" value="3246" id="lancheckbox" checked >Tibetan: 1100 A.D.? Kj mdo sde ja</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_483[3247]" value="3247" id="lancheckbox" checked >English: , Kern (1884)</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="483">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="483">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='483'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v483">Search in Saddharmapuṇḍarīka</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=483'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=483'>Saddharmapuṇḍarīka</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=483" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="49979.1.Nidāna|49980.2.Upāyakauśalya|49981.3.Aupamya|49982.4.Adhimukti|49983.5.Oṣadhī|49984.6.Vyākaraṇa|49985.7.Pūrvayoga|49986.8.Pañcabhikṣuśatavyākaraṇa|49987.9.Ānandādivyākaraṇa|49988.10.Dharmabhāṇaka|49989.11.Stūpasaṃdarśana|49990.12.Utsāha|49991.13.Sukhavihāra|49992.14.Bodhisattvapṛthivīvirasamudgama|49993.15.Tathāgatāyuṣpramāṇa|49994.16.Puṇyaparyāya|49995.17.Anumodanāpuṇyanirdeśa|49996.18.Dharmabhāṇakānuśaṃsā|49997.19.Sadāparibhūta|49998.20.Tathāgataddharyabhisaṃskāra|49999.21.Dhāraṇī|50000.22.Bhaiṣajyarājapūrvayoga|50001.23.Gadgadasvara|50002.24.Samantamukha|50003.25.Śubhavyūharājapūrvayoga|50004.26.Samantabhadrotsāhana|50005.27.Anuparīndanā|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49979.1.Nidāna" border=0 hspace=2><a id="href_49979.1.Nidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=812337&level=1&cid=455347" class="ajax_tree0">1. Nidāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49980.2.Upāyakauśalya" border=0 hspace=2><a id="href_49980.2.Upāyakauśalya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=812551&level=1&cid=455470" class="ajax_tree0">2. Upāyakauśalya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49981.3.Aupamya" border=0 hspace=2><a id="href_49981.3.Aupamya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=812788&level=1&cid=455639" class="ajax_tree0">3. Aupamya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49982.4.Adhimukti" border=0 hspace=2><a id="href_49982.4.Adhimukti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=813128&level=1&cid=455816" class="ajax_tree0">4. Adhimukti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49983.5.Oṣadhī" border=0 hspace=2><a id="href_49983.5.Oṣadhī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=813343&level=1&cid=455894" class="ajax_tree0">5. Oṣadhī
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49984.6.Vyākaraṇa" border=0 hspace=2><a id="href_49984.6.Vyākaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=813570&level=1&cid=455991" class="ajax_tree0">6. Vyākaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49985.7.Pūrvayoga" border=0 hspace=2><a id="href_49985.7.Pūrvayoga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=813673&level=1&cid=456041" class="ajax_tree0">7. Pūrvayoga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49986.8.Pañcabhikṣuśatavyākaraṇa" border=0 hspace=2><a id="href_49986.8.Pañcabhikṣuśatavyākaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=814026&level=1&cid=456203" class="ajax_tree0">8. Pañcabhikṣuśatavyākaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49987.9.Ānandādivyākaraṇa" border=0 hspace=2><a id="href_49987.9.Ānandādivyākaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=814166&level=1&cid=456260" class="ajax_tree0">9. Ānandādivyākaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49988.10.Dharmabhāṇaka" border=0 hspace=2><a id="href_49988.10.Dharmabhāṇaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=814239&level=1&cid=456292" class="ajax_tree0">10. Dharmabhāṇaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49989.11.Stūpasaṃdarśana" border=0 hspace=2><a id="href_49989.11.Stūpasaṃdarśana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=814356&level=1&cid=456339" class="ajax_tree0">11. Stūpasaṃdarśana
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49990.12.Utsāha" border=0 hspace=2><a id="href_49990.12.Utsāha" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=814635&level=1&cid=456415" class="ajax_tree0">12. Utsāha
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49991.13.Sukhavihāra" border=0 hspace=2><a id="href_49991.13.Sukhavihāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=814690&level=1&cid=456445" class="ajax_tree0">13. Sukhavihāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49992.14.Bodhisattvapṛthivīvirasamudgama" border=0 hspace=2><a id="href_49992.14.Bodhisattvapṛthivīvirasamudgama" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=814861&level=1&cid=456533" class="ajax_tree0">14. Bodhisattvapṛthivīvirasamudgama
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49993.15.Tathāgatāyuṣpramāṇa" border=0 hspace=2><a id="href_49993.15.Tathāgatāyuṣpramāṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815025&level=1&cid=456605" class="ajax_tree0">15. Tathāgatāyuṣpramāṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49994.16.Puṇyaparyāya" border=0 hspace=2><a id="href_49994.16.Puṇyaparyāya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815155&level=1&cid=456635" class="ajax_tree0">16. Puṇyaparyāya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49995.17.Anumodanāpuṇyanirdeśa" border=0 hspace=2><a id="href_49995.17.Anumodanāpuṇyanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815275&level=1&cid=456708" class="ajax_tree0">17. Anumodanāpuṇyanirdeśa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49996.18.Dharmabhāṇakānuśaṃsā" border=0 hspace=2><a id="href_49996.18.Dharmabhāṇakānuśaṃsā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815353&level=1&cid=456734" class="ajax_tree0">18. Dharmabhāṇakānuśaṃsā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49997.19.Sadāparibhūta" border=0 hspace=2><a id="href_49997.19.Sadāparibhūta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815520&level=1&cid=456824" class="ajax_tree0">19. Sadāparibhūta
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49998.20.Tathāgataddharyabhisaṃskāra" border=0 hspace=2><a id="href_49998.20.Tathāgataddharyabhisaṃskāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815595&level=1&cid=456844" class="ajax_tree0">20. Tathāgataddharyabhisaṃskāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_49999.21.Dhāraṇī" border=0 hspace=2><a id="href_49999.21.Dhāraṇī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815650&level=1&cid=456868" class="ajax_tree0">21. Dhāraṇī
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50000.22.Bhaiṣajyarājapūrvayoga" border=0 hspace=2><a id="href_50000.22.Bhaiṣajyarājapūrvayoga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815708&level=1&cid=456895" class="ajax_tree0">22. Bhaiṣajyarājapūrvayoga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50001.23.Gadgadasvara" border=0 hspace=2><a id="href_50001.23.Gadgadasvara" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815842&level=1&cid=456911" class="ajax_tree0">23. Gadgadasvara
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50002.24.Samantamukha" border=0 hspace=2><a id="href_50002.24.Samantamukha" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=815953&level=1&cid=456924" class="ajax_tree0">24. Samantamukha
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50003.25.Śubhavyūharājapūrvayoga" border=0 hspace=2><a id="href_50003.25.Śubhavyūharājapūrvayoga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=816067&level=1&cid=456972" class="ajax_tree0">25. Śubhavyūharājapūrvayoga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50004.26.Samantabhadrotsāhana" border=0 hspace=2><a id="href_50004.26.Samantabhadrotsāhana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=816192&level=1&cid=456993" class="ajax_tree0">26. Samantabhadrotsāhana
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50005.27.Anuparīndanā" border=0 hspace=2><a id="href_50005.27.Anuparīndanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=483&mid=816275&level=1&cid=457003" class="ajax_tree0">27. Anuparīndanā
+</td></tr></table>
+<script language=javascript>test('49994.16.Puṇyaparyāya|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=483&amp;mid=815155&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=483&amp;cid=456635&amp;mid=815155&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=483&amp;cid=456635&amp;mid=815155&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><div class='kilderef' id='8834614'></div><div class='clear'></div><span id='8834614bi' class='paragraph'>
+							(196,1)16: puṇyaparyāyaparivartaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='3695382'></div><div class='clear'></div><span id='3695382bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='3691411'></div><div class='clear'></div><span id='3691411bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><div class='kilderef' id='3683469'></div><div class='clear'></div><span id='3683469bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><div class='kilderef' id='3687440'></div><div class='clear'></div><span id='3687440bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834615bi' class='paragraph'>
+							asmin khalu punas tathāgatāyuṣpramāṇanirdeśe nirdiśyamāne aprameyāṇām asaṃkhyeyānāṃ sattvānām arthaḥ kṛto ’bhūt |&nbsp;</span><span id='8834616bi' class='paragraph'>
+						 atha khalu bhagavān maitreyaṃ bodhisattvaṃ mahāsattvam āmantrayate sma&nbsp;</span><span id='8834617bi' class='paragraph'>
+						 - asmin khalu punar ajita tathāgatāyuṣpramāṇanirdeśadharmaparyāye nirdiśyamāne aṣṭaṣaṣṭigaṅgānadīvālukāsamānāṃ bodhisattvakoṭīnayutaśatasahasrāṇām anutpattikadharmakṣāntirutpannā |&nbsp;</span><span id='8834618bi' class='paragraph'>
+						 ebhyaḥ sahasraguṇena yeṣāṃ bodhisattvānāṃ mahāsattvānāṃ dhāraṇīpratilambho ’bhūt |&nbsp;</span><span id='8834619bi' class='paragraph'>
+						 anyeṣāṃ ca sāhasrikalokadhātuparamāṇurajaḥsamānāṃ bodhisattvānāṃ mahāsattvānām imaṃ dharmaparyāyaṃ śrutvā asaṅgapratibhānatāpratilambho ’bhūt |&nbsp;</span><span id='8834620bi' class='paragraph'>
+						 anyeṣāṃ ca dvisāhasrikalokadhātuparamāṇurajaḥsamānāṃ bodhisattvānāṃ mahāsattvānāṃ koṭīnayutaśatasahasraparivartāyā dhāraṇyāḥ pratilambho ’bhūt |&nbsp;</span><span id='8834621bi' class='paragraph'>
+						 anye ca trisāhasrikalokadhātuparamāṇurajaḥsamā bodhisattvā mahāsattvā imaṃ dharmaparyāyaṃ śrutvā avaivartyadharmacakraṃ pravartayām āsuḥ |&nbsp;</span><span id='8834622bi' class='paragraph'>
+						 anye ca madhyamakalokadhātuparamāṇurajaḥsamā bodhisattvā mahāsattvā imaṃ dharmaparyāyaṃ śrutvā vimalanirbhāsacakraṃ pravartayām āsuḥ |&nbsp;</span><span id='8834623bi' class='paragraph'>
+						 anye ca kṣudrakalokadhātuparamāṇurajaḥsamā bodhisattvā mahāsattvā imaṃ dharmaparyāyaṃ śrutvā aṣṭajāti[prati]baddhā abhūvan anuttarāyāṃ samyaksaṃbodhau |&nbsp;</span><span id='8834624bi' class='paragraph'>
+						 anye ca catuścāturdvīpikā lokadhātuparamāṇurajaḥsamā bodhisattvā mahāsattvā imaṃ dharmaparyāyaṃ śrutvā caturjātipratibaddhā abhūvan anuttarāyāṃ samyaksaṃbodhau |&nbsp;</span><span id='8834625bi' class='paragraph'>
+						 anye ca tricāturdvīpikā lokadhātuparamāṇurajaḥsamā bodhisattvā mahāsattvā imaṃ dharmaparyāyaṃ śrutvā trijātipratibaddhā abhūvan anuttarāyāṃ samyaksaṃbodhau |&nbsp;</span><span id='8834626bi' class='paragraph'>
+						 anye ca dvicāturdvīpikā lokadhātuparamāṇurajaḥsamā bodhisattvā mahāsattvā imaṃ dharmaparyāyaṃ śrutvā dvijātipratibaddhā abhūvann anuttarāyāṃ samyaksaṃbodhau |&nbsp;</span><span id='8834627bi' class='paragraph'>
+						 anye caikacāturdvīpikā lokadhātuparamāṇurajaḥsamā bodhisattvā mahāsattvā imaṃ dharmaparyāyaṃ śrutvā ekajātipratibaddhā abhūvann anuttarāyāṃ samyaksaṃbodhau |&nbsp;</span><span id='8834628bi' class='paragraph'>
+						 aṣṭatrisāhasramahāsāhasralokadhātuparamāṇurajaḥ samaiś ca bodhisattvair mahāsattvair imaṃ dharmaparyāyaṃ śrutvā anuttarāyāṃ samyaksaṃbodhau cittānyutpāditāni ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695383bi' class='paragraph'>
+							.&nbsp;</span><span id='3695384bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695385bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695386bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695387bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695388bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695389bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695390bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695391bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695392bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695393bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695394bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695395bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695396bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691412bi' class='paragraph'>
+							.&nbsp;</span><span id='3691413bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691414bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691415bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691416bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691417bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691418bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691419bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691420bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691421bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691422bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691423bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691424bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691425bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683470bi' class='paragraph'>
+							.&nbsp;</span><span id='3683471bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683472bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683473bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683474bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683475bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683476bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683477bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683478bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683479bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683480bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683481bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683482bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683483bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687441bi' class='paragraph'>
+							.&nbsp;</span><span id='3687442bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687443bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687444bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687445bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687446bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687447bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687448bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687449bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687450bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687451bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687452bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687453bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687454bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834629bi' class='paragraph'>
+							atha samanantaranirdiṣṭe bhagavataiṣāṃ bodhisattvānāṃ mahāsattvānāṃ dharmābhisamaye pratiṣṭhāne, atha tāvad evoparivaihāyasādantarīkṣānmāndāravamahāmāndāravāṇāṃ puṣpāṇāṃ puṣpavarṣam abhipravṛṣṭam |&nbsp;</span><span id='8834630bi' class='paragraph'>
+						 teṣu ca lokadhātukoṭīnayutaśatasahasreṣu yāni tāni buddhakoṭīnayutaśatasahasrāṇyāgatya ratnavṛkṣamūleṣu siṃhāsanopaviṣṭāni, tāni sarvāṇi cāvakiranti sma, abhyavakiranti sma, abhiprakiranti sma |&nbsp;</span><span id='8834631bi' class='paragraph'>
+						 bhagavantaṃ ca śākyamuniṃ tathāgatam arhantaṃ samyaksaṃbuddhaṃ taṃ ca bhagavantaṃ prabhūtaratnaṃ tathāgatam arhantaṃ samyaksaṃbuddhaṃ parinirvṛtaṃ siṃhāsanopaviṣṭamavakiranti sma, abhyavakiranti sma, abhiprakiranti sma |&nbsp;</span><span id='8834632bi' class='paragraph'>
+						 taṃ ca sarvāvantaṃ bodhisattvagaṇaṃ tāś catasraḥ parṣado ’vakiranti sma, abhyavakiranti sma, abhiprakiranti sma |&nbsp;</span><span id='8834633bi' class='paragraph'>
+						 divyāni ca candanāgarucūrṇānyantarīkṣāt pravarṣanti sma |&nbsp;</span><span id='8834634bi' class='paragraph'>
+						 upariṣṭāccāntarīkṣe vaihāyasaṃ mahādundubhayo ’ghaṭṭitāḥ praṇedurmanojñamadhuragambhīranirghoṣāḥ (197,1)| divyāni ca dūṣyayugmaśatasahasrāṇyupariṣṭādantarīkṣāt prapatanti sma |&nbsp;</span><span id='8834635bi' class='paragraph'>
+						 hārārdhahāramuktāhāramaṇiratnamahāratnāni copariṣṭādvaihāyasamantarīkṣe samantāt savāsu dikṣu pralambanti sma |&nbsp;</span><span id='8834636bi' class='paragraph'>
+						 samantācca anarghaprāptasya dhūpasya ghaṭikāsahasrāṇi ratnamayāni svayam eva pravicaranti sma |&nbsp;</span><span id='8834637bi' class='paragraph'>
+						 ekaikasya ca tathāgatasya ratnamayīṃ chatrāvalīṃ yāvad brahmalokādupari vaihāyasam antarīkṣe bodhisattvā mahāsattvā dhārayām āsuḥ |&nbsp;</span><span id='8834638bi' class='paragraph'>
+						 anena paryāyeṇa sarveṣāṃ teṣām aprameyāṇām asaṃkhyeyānāṃ buddhakoṭīnayutaśatasahasrāṇāṃ te bodhisattvā mahāsattvā ratnamayīṃ chatrāvalīṃ yāvad brahmalokādupari vaihāyasam antarīkṣe dhārayām āsuḥ |&nbsp;</span><span id='8834639bi' class='paragraph'>
+						 pṛthak pṛthag gāthābhinirhārair bhūtair buddhastavaistāṃs tathāgatānābhiṣṭuvanti sma ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695397bi' class='paragraph'>
+							.&nbsp;</span><span id='3695398bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695399bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695400bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695401bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695402bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695403bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695404bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695405bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695406bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695407bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691426bi' class='paragraph'>
+							.&nbsp;</span><span id='3691427bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691428bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691429bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691430bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691431bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691432bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691433bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691434bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691435bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691436bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683484bi' class='paragraph'>
+							.&nbsp;</span><span id='3683485bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683486bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683487bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683488bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683489bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683490bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683491bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683492bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683493bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683494bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687455bi' class='paragraph'>
+							.&nbsp;</span><span id='3687456bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687457bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687458bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687459bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687460bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687461bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687462bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687463bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687464bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687465bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834640bi' class='paragraph'>
+							atha khalu maitreyo bodhisattvo mahāsattvas tasyāṃ velāyām imā gāthā abhāṣata -&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695408bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691437bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683495bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687466bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834641bi' class='paragraph'>
+							āścarya dharmaḥ sugatena śrāvito na jātu asmābhiḥ śrutaiṣa pūrvam |<br />mahātmatā yādṛśi nāyakānāṃ āyuṣpramāṇaṃ ca yathā anantam || 16.1 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695409bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691438bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683496bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687467bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834642bi' class='paragraph'>
+							evaṃ ca dharmaṃ śruṇiyāna adya vibhajyamānaṃ sugatena saṃmukham |<br />prītisphuṭāḥ prāṇasahasrakoṭyo ya aurasā lokavināyakasya || 16.2 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695410bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691439bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683497bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687468bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834643bi' class='paragraph'>
+							avivartiyā keci sthitāgrabodhau keci sthitā dhāraṇiye varāyām |<br />asaṅgapratibhāṇi sthitāś ca kecit koṭīsahasrāya ca dhāraṇīye || 16.3 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695411bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691440bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683498bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687469bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834644bi' class='paragraph'>
+							paramāṇukṣetrasya tathaiva cānye ye prasthitā uttamabuddhajñāne |<br />kecicca jātībhi tathaiva cāṣṭabhi jinā bhaviṣyanti anantadarśinaḥ || 16.4 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695412bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691441bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683499bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687470bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834645bi' class='paragraph'>
+							kecittu catvāri atikramitvā kecitribhiś caiva dvibhiś ca anye |<br />lapsyanti bodhiṃ paramārthadarśinaḥ śruṇitva dharmaṃ imu nāyakasya || 16.5 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695413bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691442bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683500bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687471bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834646bi' class='paragraph'>
+							(198,1) ke cāpi ekāya sthihitva jātyā sarvajña bhoṣyanti bhavāntareṇa |<br />śruṇitva āyu imu nāyakasya etādṛśaṃ labdhu phalaṃ anāsravam || 16.6 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695414bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691443bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683501bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687472bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834647bi' class='paragraph'>
+							aṣṭāna kṣetrāṇa yathā rajo bhavet evāpramāṇā gaṇanāya tattakāḥ |<br />yāḥ sattvakoṭyo hi śruṇitva dharmaṃ utpādayiṃsū varabodhicittam || 16.7 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695415bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691444bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683502bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687473bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834648bi' class='paragraph'>
+							etādṛśaṃ karma kṛtaṃ maharṣiṇā prakāśayantenima buddhabodhim |<br />anantakaṃ yasya pramāṇu nāsti ākāśadhātū ca yathāprameyaḥ || 16.8 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695416bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691445bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683503bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687474bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834649bi' class='paragraph'>
+							māndāravāṇāṃ ca pravarṣi varṣaṃ bahudevaputrāṇa sahasrakoṭyaḥ |<br />śakrāś ca brahmā yathā gaṅgavālikā ye āgatā kṣetrasahasrakoṭibhiḥ || 16.9 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695417bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691446bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683504bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687475bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834650bi' class='paragraph'>
+							sugandhacūrṇāni ca candanasya agarusya cūrṇāni ca muñcamānāḥ |<br />caranti ākāśi yathaiva pakṣī abhyokirantā vidhivajjinendrān || 16.10 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695418bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691447bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683505bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687476bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834651bi' class='paragraph'>
+							upariṃ ca vaihāyasu dundubhīyo ninādayanto madhurā aghaṭṭitāḥ |<br />divyāna dūṣyāṇa sahasrakoṭyaḥ kṣipanti bhrāmenti ca nāyakānām || 16.11 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695419bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691448bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683506bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687477bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834652bi' class='paragraph'>
+							anarghamūlyasya ca dhūpanasya ratnāmayī ghaṭikasahasrakoṭyaḥ |<br />svayaṃ samantena viceru tatra pūjārtha lokādhipatisya tāyinaḥ || 16.12 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695420bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691449bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683507bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687478bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834653bi' class='paragraph'>
+							uccān mahantān ratanāmayāṃś ca chatrāṇa koṭīnayutānanantān |<br />dhārantime paṇḍita bodhisattvāḥ avataṃsakān yāvat brahmalokāt || 16.13 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695421bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691450bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683508bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687479bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834654bi' class='paragraph'>
+							(199,1) savaijayantāṃś ca sudarśanīyān dhvajāṃś ca oropayi nāyakānām |<br />gāthāsahasraiś ca abhiṣṭuvanti prahṛṣṭacittāḥ sugatasya putrāḥ || 16.14 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695422bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691451bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683509bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687480bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834655bi' class='paragraph'>
+							etādṛśāścaryaviśiṣṭa adbhutā vicitra dṛśyantimi adya nāyakāḥ |<br />āyuṣpramāṇasya nidarśanena prāmodyalabdhā imi sarvasattvāḥ || 16.15 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695423bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691452bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683510bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687481bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834656bi' class='paragraph'>
+							vipulo ’dya artho daśasū diśāsu ghoṣaś ca abhyudgatu nāyakānām |<br />saṃtarpitāḥ prāṇasahasrakoṭyaḥ kuśalena bodhāya samanvitāś ca || 16.16 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695424bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691453bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683511bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687482bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834657bi' class='paragraph'>
+							atha khalu bhagavān maitreyaṃ bodhisattvaṃ mahāsattvam āmantrayate sma&nbsp;</span><span id='8834658bi' class='paragraph'>
+						 - yair ajita asmiṃs tathāgatāyuṣpramāṇanirdeśadharmaparyāye nirdiśyamāne sattvair ekacittotpādikāpyadhimuktirutpāditā, abhiśraddadhānatā vā kṛtā, kiyat te kulaputrā vā kuladuhitaro vā puṇyaṃ prasavantīti tacchṛṇu, sādhu ca suṣṭhu ca manasi kuru |&nbsp;</span><span id='8834659bi' class='paragraph'>
+						 bhāṣiṣye ’haṃ yāvat puṇyaṃ prasavantīti |&nbsp;</span><span id='8834660bi' class='paragraph'>
+						 tadyathāpi nāma ajitakaścid eva kulaputro vā kuladuhitā vā anuttarāṃ samyaksaṃbodhim abhikāṅkṣamāṇaḥ pañcasu pāramitāsvaṣṭau kalpakoṭīnayutaśatasahasrāṇi caret |&nbsp;</span><span id='8834661bi' class='paragraph'>
+						 tadyathā dānapāramitāyāṃ śīlapāramitāyāṃ kṣāntipāramitāyāṃ vīryapāramitāyāṃ dhyānapāramitāyāṃ virahitaḥ prajñāpāramitayā, yena ca ajita kulaputreṇa vā kuladuhitrā vā imaṃ tathāgatāyuṣpramāṇanirdeśaṃ dharmaparyāyaṃ śrutvā ekacittotpādikāpyadhimuktirutpāditā abhiśraddadhānatā vā kṛtā, asya puṇyābhisaṃskārasya kuśalābhisaṃskārasya asau paurvakaḥ puṇyābhisaṃskāraḥ kuśalābhisaṃskāraḥ pañcapāramitāpratisaṃyukto ’ṣṭakalpakoṭīnayutaśatasahasrapariniṣpannaḥ śatatamīm api kalāṃ nopayāti, sahasratamīm api śatasahasratamīm api koṭīśatasahasratamīm api koṭīnayutasahasratamīm api koṭīnayutaśatasahasratamīm api kalāṃ nopayāti, saṃkhyām api kalām api gaṇanām api upamām api upanisām api na kṣamate |&nbsp;</span><span id='8834662bi' class='paragraph'>
+						 evaṃrūpeṇa ajita puṇyābhisaṃskāreṇa samanvāgataḥ kulaputro vā kuladuhitā vā vivartate ’nuttarāyāḥ samyaksaṃbodheriti naitat sthānaṃ vidyate ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695425bi' class='paragraph'>
+							.&nbsp;</span><span id='3695426bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695427bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695428bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695429bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695430bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691454bi' class='paragraph'>
+							.&nbsp;</span><span id='3691455bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691456bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691457bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691458bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691459bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683512bi' class='paragraph'>
+							.&nbsp;</span><span id='3683513bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683514bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683515bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683516bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683517bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687483bi' class='paragraph'>
+							.&nbsp;</span><span id='3687484bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687485bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687486bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687487bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687488bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834663bi' class='paragraph'>
+							atha khalu bhagavāṃs tasyāṃ velāyām imā gāthā abhāṣata -&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695431bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691460bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683518bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687489bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834664bi' class='paragraph'>
+							yaś ca pāramitāḥ pañca samādāyehi vartate |<br />idaṃ jñānaṃ gaveṣanto buddhajñānam anuttaram || 16.17 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695432bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691461bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683519bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687490bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834665bi' class='paragraph'>
+							kalpakoṭīsahasrāṇi aṣṭau pūrṇāni yujyate |<br />dānaṃ dadanto buddhebhyaḥ śrāvakebhyaḥ punaḥ punaḥ || 16.18 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695433bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691462bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683520bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687491bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834666bi' class='paragraph'>
+							(200,1) pratyekabuddhāṃstarpento bodhisattvāna koṭiyaḥ |<br />khādyabhojyānnapānehi vastraśayyāsanehi ca || 16.19 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695434bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691463bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683521bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687492bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834667bi' class='paragraph'>
+							pratiśrayān vihārāṃś ca candanasyeha kārayet |<br />ārāmān ramaṇīyāṃś ca caṃkramasthānaśobhitān || 16.20 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695435bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691464bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683522bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687493bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834668bi' class='paragraph'>
+							etādṛśaṃ daditvāna dānaṃ citra bahūvidham |<br />kalpakoṭīsahasrāṇi datvā bodhāya nāmayet || 16.21 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695436bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691465bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683523bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687494bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834669bi' class='paragraph'>
+							punaś ca śīlaṃ rakṣeta śuddhaṃ saṃbuddhavarṇitam |<br />akhaṇḍaṃ saṃstutaṃ vijñair buddhajñānasya kāraṇāt || 16.22 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695437bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691466bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683524bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687495bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834670bi' class='paragraph'>
+							punaś ca kṣānti bhāveta dāntabhūmau pratiṣṭhitaḥ |<br />dhṛtimān smṛtimāṃś caiva paribhāṣāḥ kṣame bahūḥ || 16.23 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695438bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691467bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683525bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687496bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834671bi' class='paragraph'>
+							ye copalambhikāḥ sattvā adhimāne pratiṣṭhitāḥ |<br />kutsanaṃ ca sahetteṣāṃ buddhajñānasya kāraṇāt || 16.24 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695439bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691468bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683526bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687497bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834672bi' class='paragraph'>
+							nityodyuktaś ca vīryasmin abhiyukto dṛḍhasmṛtiḥ |<br />ananyamanasaṃkalpo bhaveyā kalpakoṭiyaḥ || 16.25 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695440bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691469bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683527bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687498bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834673bi' class='paragraph'>
+							araṇyavāsi tiṣṭhanto caṃkramaṃ abhir uhya ca |<br />styānamiddhaṃ ca varjitvā kalpakoṭyo hi yaś caret || 16.26 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695441bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691470bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683528bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687499bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834674bi' class='paragraph'>
+							yaś ca dhyāyī mahādhyāyī dhyānārāmaḥ samāhitaḥ |<br />kalpakoṭyaḥ sthito dhyāyet sahasrāṇyaṣṭanūnakāḥ || 16.27 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695442bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691471bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683529bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687500bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834675bi' class='paragraph'>
+							tena dhyānena so vīraḥ prārthayed bodhimuttamām |<br />ahaṃ syāmiti sarvajño dhyānapāramitāṃ gataḥ || 16.28 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695443bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691472bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683530bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687501bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834676bi' class='paragraph'>
+							yacca puṇyaṃ bhavetteṣāṃ niṣevitvā imāṃ kriyām |<br />kalpakoṭīsahasrāṇi ye pūrvaṃ parikīrtitāḥ || 16.29 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695444bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691473bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683531bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687502bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834677bi' class='paragraph'>
+							āyuṃ ca mama yo śrutvā strī vāpi puruṣo ’pi vā |<br />ekakṣaṇaṃ pi śraddhāti idaṃ puṇyamanantakam || 16.30 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695445bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691474bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683532bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687503bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834678bi' class='paragraph'>
+							vicikitsāṃ ca varjitvā iñjitā manyitāni ca |<br />adhimucyenmuhūrtaṃ pi phalaṃ tasyedamīdṛśam || 16.31 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695446bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691475bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683533bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687504bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834679bi' class='paragraph'>
+							bodhisattvāś ca ye bhonti caritāḥ kalpakoṭiyaḥ |<br />na te trasanti śrutvedaṃ mama āyuracintiyam || 16.32 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695447bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691476bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683534bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687505bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834680bi' class='paragraph'>
+							mūrdhena ca namasyanti ahamapyedṛśo bhavet |<br />anāgatasminnadhvāni tāreyaṃ prāṇikoṭiyaḥ || 16.33 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695448bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691477bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683535bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687506bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834681bi' class='paragraph'>
+							(201,1) yathā śākyamunirnāthaḥ śākyasiṃho mahāmuniḥ |<br />bodhimaṇḍe niṣīditvā siṃhanādamidaṃ nadet || 16.34 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695449bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691478bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683536bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687507bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834682bi' class='paragraph'>
+							aham apy anāgate ’dhvāni satkṛtaḥ sarvadehinām |<br />bodhimaṇḍe niṣīditvā āyuṃ deśeṣyamīdṛśam || 16.35 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695450bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691479bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683537bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687508bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834683bi' class='paragraph'>
+							adhyāśayena saṃpannāḥ śrutādhārāś ca ye narāḥ |<br />saṃdhābhāṣyaṃ vijānanti kāṅkṣā teṣāṃ na vidyate || 16.36 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695451bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691480bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683538bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687509bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834684bi' class='paragraph'>
+							punar aparamajita ya imaṃ tathāgatāyuṣpramāṇanirdeśaṃ dharmaparyāyaṃ śrutvā avataredadhimucyeta avagāheta avabudhyeta, so ’smādaprameyataraṃ puṇyābhisaṃskāraṃ prasaved buddhajñānasaṃvartanīyam |&nbsp;</span><span id='8834685bi' class='paragraph'>
+						 kaḥ punar vādo ya imam evaṃrūpaṃ dharmaparyāyaṃ śṛṇuyācchrāvayeta vācayeda dhārayedvā likhedvā likhāpayedvā pustakagataṃ vā satkuryāt, gurukuryānmānayet pūjayet satkārayedvā puṣpadhūpagandhamālyavilepanacūrṇacīvaracchatradhvajapātakābhistailapradīpair vā ghṛtapradīpair vā gandhatailapradīpair vā, bahutaraṃ puṇyābhisaṃskāraṃ prasaved buddhajñānasaṃvartanīyam ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695452bi' class='paragraph'>
+							.&nbsp;</span><span id='3695453bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691481bi' class='paragraph'>
+							.&nbsp;</span><span id='3691482bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683539bi' class='paragraph'>
+							.&nbsp;</span><span id='3683540bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687510bi' class='paragraph'>
+							.&nbsp;</span><span id='3687511bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834686bi' class='paragraph'>
+							yadā ca ajita sa kulaputro vā kuladuhitā vā imaṃ tathāgatāyuṣpramāṇanirdeśaṃ dharmaparyāya śrutvā adhyāśayenādhimucyate, tadā tasyedamadhyāśayalakṣaṇaṃ veditavyam - yaduta gṛdhrakūṭaparvatagataṃ māṃ dharmaṃ nirdeśayantaṃ drakṣyati bodhisattvagaṇaparivṛtaṃ bodhisattvagaṇapuraskṛtaṃ śrāvakasaṃghamadhyagatam |&nbsp;</span><span id='8834687bi' class='paragraph'>
+						 idaṃ ca me buddhakṣetraṃ sahāṃ lokadhātuṃ vaiḍūryamayīṃ samaprastarāṃ drakṣyati suvarṇasūtrāṣṭāpadavinaddhāṃ ratnavṛkṣair vicitritām |&nbsp;</span><span id='8834688bi' class='paragraph'>
+						 kūṭāgāraparibhogeṣu ca atra bodhisattvān nivasato drakṣyati |&nbsp;</span><span id='8834689bi' class='paragraph'>
+						 idamajita adhyāśayenādhimuktasya kulaputrasya vā kuladuhiturvā adhyāśayalakṣaṇaṃ veditavyam ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695454bi' class='paragraph'>
+							.&nbsp;</span><span id='3695455bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695456bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695457bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691483bi' class='paragraph'>
+							.&nbsp;</span><span id='3691484bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691485bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691486bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683541bi' class='paragraph'>
+							.&nbsp;</span><span id='3683542bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683543bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683544bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687512bi' class='paragraph'>
+							.&nbsp;</span><span id='3687513bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687514bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687515bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834690bi' class='paragraph'>
+							api tu khalu punar ajita tān apy ahamadhyāśayādhimuktān kulaputrān vadāmi, ye tathāgatasya parinirvṛtasya imaṃ dharmaparyāyaṃ śrutvā na pratikṣepsyanti uttari cābhyanumodayiṣyanti |&nbsp;</span><span id='8834691bi' class='paragraph'>
+						 kaṃḥ punar vādo ye dhārayiṣyanti vācayiṣyanti |&nbsp;</span><span id='8834692bi' class='paragraph'>
+						 tatas tathāgataṃ soṃ ’sena pariharati ya imaṃ dharmaparyāyaṃ pustakagataṃ kṛtvā aṃsena pariharati |&nbsp;</span><span id='8834693bi' class='paragraph'>
+						 na me tenājita kulaputreṇa vā kuladuhitrā vā stūpāḥ kartavyāḥ, na vihārā kartavyāḥ, na bhikṣusaṃghāya glānapratyayabhaiṣajyapariṣkārāstenānupradeyā bhavanti |&nbsp;</span><span id='8834694bi' class='paragraph'>
+						 tat kasya hetoḥ? kṛtā me tena ajita kulaputreṇa vā kuladuhitrā vā śarīreṣu śarīrapūjā, saptaratnamayāś ca stūpāḥ kāritāḥ, yāvad brahmalokamuccaistvena anupūrvapariṇāhena sacchatraparigrahāḥ savaijayantīkā ghaṇṭāsamudgānuratāḥ, teṣāṃ ca śarīrastūpānāṃ vividhāḥ satkārāḥ kṛtā nānāvidhair divyair mānuṣyakaiḥ puṣpadhūpagandhamālyavilepanacūrṇacīvaracchatradhvajapatākāvaijayantībhir vividhamadhuramanojñapaṭupaṭahadundubhimahādundubhibhir vādyatālaninādarnirghoṣaśabdair nānāvidhaiś ca gītanṛtyalāsyaprakārair bahubhir aparimitair bahvaprameyāṇi kalpakoṭīnayutaśatasahasrāṇi satkāraḥ kṛto bhavati |&nbsp;</span><span id='8834695bi' class='paragraph'>
+						 imaṃ dharmaparyāyaṃ mama parinirvṛtasya dhārayitvā vācayitvā likhitvā (202,1) prakāśayitvā vihārā api tena ajita kṛtā bhavanti vipulā vistīrṇāḥ |&nbsp;</span><span id='8834696bi' class='paragraph'>
+						 pragṛhītāś ca lohitacandanamayā dvātriṃśatprāsādā aṣṭatalā bhikṣusahasrāvāsāḥ |&nbsp;</span><span id='8834697bi' class='paragraph'>
+						 ārāmapuṣpopaśobhitāścaṃkramavanopetāḥ śayanāsanopastabdhāḥ khādyabhojyānnapānaglānapratyayabhaiṣajyapariṣkāraparipūrṇāḥ sarvasukhopadhānapratimaṇḍitāḥ |&nbsp;</span><span id='8834698bi' class='paragraph'>
+						 te ca bahvaprameyā yaduta śataṃ vā sahasraṃ vā śatasahasraṃ vā koṭī vā koṭīśataṃ vā koṭīsahasraṃ vā koṭiśatasahasraṃ vā koṭīnayutaśatasahasraṃ vā |&nbsp;</span><span id='8834699bi' class='paragraph'>
+						 te ca mama saṃmukhaṃ śrāvakasaṃghasya niryātitāḥ, te ca mayā paribhuktā veditavyāḥ |&nbsp;</span><span id='8834700bi' class='paragraph'>
+						 ya imaṃ dharmaparyāyaṃ tathāgatasya parinirvṛtasya dhārayedvā vācayedvā deśayedvā likhedvā lekhayedvā, tadanenāhamajitaparyāyeṇa evaṃ vadāmi - na me tena parinirvṛtasya dhātustūpāḥ kārayitavyāḥ, na saṃghapūjā |&nbsp;</span><span id='8834701bi' class='paragraph'>
+						 kaḥ punar vādo ’jita ya imaṃ dharmaparyāyaṃ dhārayan dānena vā saṃpādayecchīlena vā kṣāntyā vā vīryeṇa vā dhyānena vā prajñayā vā saṃpādayet, bahutaraṃ puṇyābhisaṃskāraṃ sa kulaputro vā kuladuhitā vā prasaved buddhajñānasaṃvartanīyamaprameyamasaṃkhyeyamaparyantam |&nbsp;</span><span id='8834702bi' class='paragraph'>
+						 tadyathāpi nāma ajita ākāśa dhāturaparyantaḥ pūrvadakṣiṇapaścimottarādharordhvāsu dikṣu vidikṣu, evamaprameyāsaṃkhyeyān sa kulaputro vā kuladuhitā vā puṇyābhisaṃskārān prasaved buddhajñānasaṃvartanīyān ya imaṃ dharmaparyāyaṃ dhārayedvā vācayedvā deśayedvā likhedvā likhāpayedvā |&nbsp;</span><span id='8834703bi' class='paragraph'>
+						 tathāgatacaityasatkārārthaṃ ca abhiyukto bhavet, tathāgataśrāvakāṇāṃ ca varṇaṃ bhāṣeta, bodhisattvānāṃ ca mahāsattvānāṃ guṇakoṭīnayutaśatasahasrāṇi parikīrtayet, pareṣāṃ ca saṃprakāśayet, kṣāntyā ca saṃpādayet, śīlavāṃś ca bhavet, kalyāṇadharmaḥ sukhasaṃvāsaḥ kṣāntaś ca bhavet, dāntaś ca bhaved anabhyasūyakaś ca, apagatakrodhamanaskāro ’vyāpannamanaskāraḥ smṛtimāṃś ca sthāmavāṃś ca bhavet, vīryavāṃś ca nityābhiyuktaś ca bhavet, buddhadharmaparyeṣṭyā dhyāyī ca bhavet, pratisaṃlayanagurukaḥ pratisaṃlayanabahulaś ca praśnaprabhedakuśalaś ca bhavet, praśnakoṭīnayutaśatasahasrāṇāṃ visarjayitā |&nbsp;</span><span id='8834704bi' class='paragraph'>
+						 yasya kasyacidajita bodhisattvasya mahāsattvasya imaṃ dharmaparyāyaṃ tathāgatasya parinirvṛtasya dhārayataḥ ime evaṃrūpā guṇā bhaveyur ye mayā parikīrtitāḥ, so ’jita kulaputro vā kuladuhitā vā evaṃ veditavyaḥ - bodhimaṇḍasaṃprasthito ’yaṃ kulaputro vā kuladuhitā vā bodhim abhisaṃboddhuṃ bodhivṛkṣamūlaṃ gacchati |&nbsp;</span><span id='8834705bi' class='paragraph'>
+						 yatra ca ajita sa kulaputro vā kuladuhitā vā tiṣṭhedvā niṣīdedvā caṃkramedvā, tatra ajita tathāgatamuddiśya caityaṃ kartavyam, tathāgatas tūpo ’yam iti ca sa vaktavyaḥ sadevakena lokeneti ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695458bi' class='paragraph'>
+							.&nbsp;</span><span id='3695459bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695460bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695461bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695462bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695463bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695464bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695465bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695466bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695467bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695468bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695469bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695470bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695471bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695472bi' class='paragraph'>
+						 .&nbsp;</span><span id='3695473bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691487bi' class='paragraph'>
+							.&nbsp;</span><span id='3691488bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691489bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691490bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691491bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691492bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691493bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691494bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691495bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691496bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691497bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691498bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691499bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691500bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691501bi' class='paragraph'>
+						 .&nbsp;</span><span id='3691502bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683545bi' class='paragraph'>
+							.&nbsp;</span><span id='3683546bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683547bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683548bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683549bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683550bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683551bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683552bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683553bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683554bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683555bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683556bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683557bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683558bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683559bi' class='paragraph'>
+						 .&nbsp;</span><span id='3683560bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687516bi' class='paragraph'>
+							.&nbsp;</span><span id='3687517bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687518bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687519bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687520bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687521bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687522bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687523bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687524bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687525bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687526bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687527bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687528bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687529bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687530bi' class='paragraph'>
+						 .&nbsp;</span><span id='3687531bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834706bi' class='paragraph'>
+							atha khalu bhagavāṃs tasyāṃ velāyām imā gāthā abhāṣata -&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695474bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691503bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683561bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687532bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834707bi' class='paragraph'>
+							puṇyaskandho aparyanto varṇito me punaḥ punaḥ |<br />ya idaṃ dhārayetsūtraṃ nirvṛte naranāyake || 16.37 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695475bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691504bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683562bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687533bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834708bi' class='paragraph'>
+							pūjāś ca me kṛtāstena dhātustūpāś ca kāritāḥ |<br />ratnāmayā vicitrāś ca darśanīyaḥ suśobhanāḥ || 16.38 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695476bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691505bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683563bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687534bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834709bi' class='paragraph'>
+							(203,1) brahmalokasamā uccā chatrāvalibhir anvitāḥ |<br />pariṇāhavantaḥ śrīmanto vaijayantīsamanvitāḥ || 16.39 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695477bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691506bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683564bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687535bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834710bi' class='paragraph'>
+							paṭughaṇṭā raṇantaś ca paṭṭadāmopaśobhitāḥ |<br />vāteritāstathā ghaṇṭā śobhanti jinadhātuṣu || 16.40 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695478bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691507bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683565bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687536bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834711bi' class='paragraph'>
+							pūjā ca vipulā teṣāṃ puṣpagandhavilepanaiḥ |<br />kṛtā vādyaiś ca vastraiś ca dundubhībhiḥ punaḥ puna || 16.41 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695479bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691508bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683566bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687537bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834712bi' class='paragraph'>
+							madhurā vādyabhāṇḍā ca vāditā teṣu dhātuṣu |<br />gandhatailapradīpāś ca dattāste ’pi samantataḥ || 16.42 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695480bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691509bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683567bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687538bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834713bi' class='paragraph'>
+							ya idaṃ dhārayet sūtraṃ kṣayakāli ca deśayet |<br />īdṛśī me kṛtā tena vividhā pūjanantikā || 16.43 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695481bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691510bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683568bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687539bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834714bi' class='paragraph'>
+							agrā vihārakoṭyo ’pi bahuścandanakāritāḥ |<br />dvātriṃśatī ca prāsādā uccaistvenāṣṭavattalāḥ || 16.44 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695482bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691511bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683569bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687540bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834715bi' class='paragraph'>
+							śayyāsanair upastabdhāḥ khādyabhojyaiḥ samanvitāḥ |<br />praveṇī praṇīta prajñaptā āvāsāś ca sahasraśaḥ || 16.45 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695483bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691512bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683570bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687541bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834716bi' class='paragraph'>
+							ārāmāścaṃkramā dattāḥ puṣpārāmopaśobhitāḥ |<br />bahu ucchadakāścaiva bahurūpavicitritāḥ || 16.46 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695484bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691513bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683571bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687542bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834717bi' class='paragraph'>
+							saṃghasya vividhā pūjā kṛtā me tena saṃmukham |<br />ya idaṃ dhārayetsūtraṃ nirvṛtasmin vināyake || 16.47 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695485bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691514bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683572bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687543bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834718bi' class='paragraph'>
+							adhimuktisāro yo syādato bahutaraṃ hi saḥ |<br />puṇyaṃ labheta yo etatsūtraṃ vācellikheta vā || 16.48 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695486bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691515bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683573bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687544bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834719bi' class='paragraph'>
+							likhāpayennaraḥ kaścit suniruktaṃ ca pustake |<br />pustakaṃ pūjayettacca gandhamālyavilepanaiḥ || 16.49 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695487bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691516bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683574bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687545bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834720bi' class='paragraph'>
+							dīpaṃ ca dadyādyo nityaṃ gandhatailasya pūritam |<br />jātyutpalātimuktaiś ca prakaraiścampakasya ca || 16.50 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695488bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691517bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683575bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687546bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834721bi' class='paragraph'>
+							kuryādetādṛśīṃ pūjāṃ pustakeṣu ca yo naraḥ |<br />bahu prasavate puṇyaṃ pramāṇaṃ yasya no bhavet || 16.51 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695489bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691518bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683576bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687547bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834722bi' class='paragraph'>
+							yathaivākāśadhātau hi pramāṇaṃ nopalabhyate |<br />diśāsu daśasū nityaṃ puṇyaskandho ’yamīdṛśaḥ || 16.52 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695490bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691519bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683577bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687548bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834723bi' class='paragraph'>
+							kaḥ punar vādo yaś ca syāt kṣānto dāntaḥ samāhitaḥ |<br />śīlavāṃś caiva dhyāyī ca pratisaṃlānagocaraḥ || 16.53 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695491bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691520bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683578bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687549bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834724bi' class='paragraph'>
+							(204,1) akrodhano apiśunaścaityasmin gaurave sthitaḥ |<br />bhikṣūṇāṃ praṇato nityaṃ nādhimānī na cālasaḥ || 16.54 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695492bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691521bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683579bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687550bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834725bi' class='paragraph'>
+							prajñavāṃś caiva dhīraś ca praśnaṃ pṛṣṭo na kupyati |<br />anulomaṃ ca deśeti kṛpābuddhī ca prāṇiṣu || 16.55 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695493bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691522bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683580bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687551bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834726bi' class='paragraph'>
+							ya īdṛśo bhavetkaścid yaḥ sūtraṃ dhārayedidam |<br />na tasya puṇyaskandhasya pramāṇamupalabhyate || 16.56 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695494bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691523bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683581bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687552bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834727bi' class='paragraph'>
+							yadi kaścinnaraḥ paśyedīdṛśaṃ dharmabhāṇakam |<br />dhārayantamidaṃ sūtraṃ kuryādvai tasya satkriyām || 16.57 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695495bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691524bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683582bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687553bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834728bi' class='paragraph'>
+							divyaiś ca puṣpais tatha okireta divyaiś ca vastrair abhicchādayeta |<br />mūrdhena vanditva ca tasya pādau tathāgato ’yaṃ janayeta saṃjñām || 16.58 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695496bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691525bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683583bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687554bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834729bi' class='paragraph'>
+							dṛṣṭvā ca taṃ cintayi tasmi kāle gamiṣyate eṣa drumasya mūlam |<br />budhyiṣyate bodhim anuttarāṃ śivāṃ hitāya lokasya sadevakasya || 16.59 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695497bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691526bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683584bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687555bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834730bi' class='paragraph'>
+							yasmiṃś ca so caṃkrami tādṛśo viduḥ tiṣṭheta vā yatra niṣīdayedvā |<br />śayyāṃ ca kalpeya kahiṃci dhīro bhāṣantu gāthāṃ pi tu ekasūtrāt || 16.60 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695498bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691527bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683585bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687556bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834731bi' class='paragraph'>
+							yasmiṃś ca stūpaṃ puruṣottamasya kārāpayeccitrasudarśanīyam |<br />uddiśya buddhaṃ bhagavanta nāyakaṃ pūjāṃ ca citrāṃ tahi kārayettathā || 16.61 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695499bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691528bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683586bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687557bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834732bi' class='paragraph'>
+							mayā sa bhuktaḥ pṛthivīpradeśo mayā svayaṃ caṃkramitaṃ ca tatraṃ |<br />tatropaviṣṭo aham eva ca syāṃ yatra sthitaḥ so bhavi buddhaputraḥ || 16.62 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695500bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691529bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683587bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687558bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='8834733bi' class='paragraph'>
+							iti śrīsaddharmapuṇḍarīke dharmaparyāye puṇyaparyāyaparivarto nāma ṣoḍaśamaḥ ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8834614";
+							kilderef = "Sddhmp Vaidya (1960)  196,1 - Vaidya (1960) 204,1";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3695501bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3695382";
+							kilderef = "Sddhmp T.263, Dharmarakṣa 竺法護, 286 A.D., p. 63a6  - T.263, Dharmarakṣa 竺法護, 286 A.D., p. ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='3691530bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3691411";
+							kilderef = "Sddhmp T.262, Kumārajīva 鳩摩羅什, 405 A.D., p.  - T.262, Kumārajīva 鳩摩羅什, 405 A.D., p. ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3683588bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3683469";
+							kilderef = "Sddhmp 1100 A.D.? Kj mdo sde ja 16a7  - 1100 A.D.? Kj mdo sde ja ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='English'><span id='3687559bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3687440";
+							kilderef = "Sddhmp Kern (1884)  - Kern (1884) ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=2901487c-b44c-11e4-bbf3-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
